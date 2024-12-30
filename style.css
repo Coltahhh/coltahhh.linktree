@@ -51,7 +51,9 @@ button {
     display: flex;
     font-family: "roboto", serif;
     font-weight: bold;
-    margin-left: 50px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
     transition-duration: 0.4s;
     cursor: pointer;
     text-align: center;
