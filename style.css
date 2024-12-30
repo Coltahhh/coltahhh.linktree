@@ -1,6 +1,5 @@
 body {
     background-color: #FF9999;
-    border: 10px solid white;
 p {
     color: white;
     font-family: Roboto, serif;
@@ -30,8 +29,8 @@ h6 {
 }
 img {
     border-color: #FF7575;
-    width: 150px;
-    height: 188.19px;
+    width: 225px;
+    height: 282.285px;
     border-radius: 50px;
     display: flex;
     justify-content: center;
@@ -68,7 +67,7 @@ button {
     padding: 15px 75px;
 }
 .button2 {
-    padding: 15px 93px;
+    padding: 15px 90px;
 }
 .button3 {
     padding: 15px 87px;
