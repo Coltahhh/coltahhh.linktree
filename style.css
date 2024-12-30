@@ -52,8 +52,7 @@ button {
     font-family: "roboto", serif;
     font-weight: bold;
     margin: auto;
-    position: absolute;
-    top: 50%;
+    align-items: center;
     transition-duration: 0.4s;
     cursor: pointer;
     text-align: center;
