@@ -54,6 +54,7 @@ button {
     margin: auto;
     transition-duration: 0.4s;
     cursor: pointer;
+    text-align: center;
 }
 .button:hover {
     background-color: #660035;
