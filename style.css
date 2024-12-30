@@ -28,7 +28,7 @@ h6 {
     align-items: center;
 }
 img {
-    border-color: #FF7575;
+    border-color: #660035;
     width: 225px;
     height: 282.285px;
     border-radius: 50px;
@@ -43,10 +43,10 @@ img {
 }
 button {
     background-color: white;
-    color: #FF7575;
+    color: #660035;
     font-size: 20px;
     border-radius: 10px;
-    border-color: #FF7575;
+    border-color: #660035;
     border-width: 5px;
     display: flex;
     font-family: "roboto", serif;
@@ -56,7 +56,7 @@ button {
     cursor: pointer;
 }
 .button:hover {
-    background-color: #FF7575;
+    background-color: #660035;
     color: white;
 }
 .text {
