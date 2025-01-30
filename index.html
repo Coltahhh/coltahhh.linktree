@@ -1,36 +1,175 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harrison Phillips | Professional Links</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #2A2A2A;
+      --secondary: #4A4A4A;
+      --accent: #6A5ACD;
+      --background: #F8F9FA;
+    }
 
-    <link rel="stylesheet" href="style.css">
-<title>Harrison's Linktree</title>
-    <meta charset="utf-8">
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: var(--background);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    .profile {
+      text-align: center;
+      margin: 2rem 0;
+      max-width: 600px;
+    }
+
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1.5rem;
+      border: 3px solid var(--primary);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .name {
+      font-size: 2rem;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+
+    .bio {
+      color: var(--secondary);
+      font-size: 1rem;
+      line-height: 1.5;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .links {
+      width: 100%;
+      max-width: 600px;
+      margin: 2rem 0;
+    }
+
+    .link {
+      background: white;
+      padding: 1.2rem;
+      margin: 1rem 0;
+      border-radius: 8px;
+      text-decoration: none;
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: transform 0.2s ease;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      border: 1px solid #EEE;
+    }
+
+    .link:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    }
+
+    /* Custom icon colors */
+    .fa-briefcase { color: #4B0082; }  /* Indigo */
+    .fa-address-book { color: #228B22; }  /* ForestGreen */
+    .fa-linkedin { color: #0077B5; }  /* LinkedIn Blue */
+    .fa-facebook { color: #1877F2; }  /* Facebook Blue */
+    .fa-instagram {
+      background: linear-gradient(45deg, #405DE6, #833AB4, #C13584, #E1306C, #FD1D1D);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .social-bar {
+      display: flex;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .social-link {
+      color: var(--secondary);
+      font-size: 1.5rem;
+      transition: transform 0.2s ease;
+    }
+
+    .social-link:hover {
+      transform: translateY(-2px);
+    }
+
+    .fa-envelope { color: #EA4335; }  /* Gmail Red */
+    .fa-github { color: #181717; }  /* GitHub Black */
+
+    @media (max-width: 480px) {
+      body {
+        padding: 1rem;
+      }
+
+      .profile-img {
+        width: 120px;
+        height: 120px;
+      }
+
+      .name {
+        font-size: 1.75rem;
+      }
+    }
+  </style>
 </head>
-
 <body>
-<br>
-
-<img src="linktreeportrait.jpg"
-     alt="Harrison's Linktree Portrait"
-     class="center">
-<h1>Harrison's Linktree</h1>
-
-<div><p><em>Aspiring Programmer and Designer</em></p></div>
-
-<br>
-<br>
-
-<div class="boxhead" style="width: 100%; text-align: center;">
-    <a href="Harrison%20Phillips.vcf"><button class="button button1">Add Contact</button></a>
-     <a href='https://www.linkedin.com/in/harrison-phillips-5840041a7'><button class="button button2">LinkedIn</button></a>
-     <a href='https://facebook.com/harrisonphillips25'><button class="button button3">Facebook</button></a>
-     <a href='https://www.instagram.com/harrison.c.p/profilecard/?igsh=MXR2eW5sZ3Y3bnV0eA=='><button class="button button4">Instagram</button></a>
-     <a href='https://snapchat.com/t/RoXzty90'><button class="button button5">Snapchat</button></a>
+<div class="profile">
+  <img src="linktreeportrait.jpg" alt="Harrison Phillips" class="profile-img">
+  <h1 class="name">Harrison Phillips</h1>
+  <p class="bio">Aspiring Programmer and Musician</p>
 </div>
-<br>
-<br>
 
+<div class="links">
+  <a href="https://docs.google.com/document/d/1xn9O4TvwvDDkS5pqZ48dLMbwi7-E610n0TBOSLdMDgg/edit?usp=sharing" class="link">
+    Portfolio
+    <i class="fas fa-briefcase"></i>
+  </a>
+  <a href="Harrison%20Phillips.vcf" class="link">
+    Add Contact
+    <i class="fas fa-address-book"></i>
+  </a>
+  <a href="https://www.linkedin.com/in/harrison-phillips-5840041a7" class="link">
+    LinkedIn
+    <i class="fab fa-linkedin"></i>
+  </a>
+  <a href="https://facebook.com/harrisonphillips25" class="link">
+    Facebook
+    <i class="fab fa-facebook"></i>
+  </a>
+  <a href="https://www.instagram.com/harrison.c.p/profilecard/?igsh=MXR2eW5sZ3Y3bnV0eA==" class="link">
+    Instagram
+    <i class="fab fa-instagram"></i>
+  </a>
+</div>
+
+<div class="social-bar">
+  <a href="mailto:harrisonphillips25@gmail.com" class="social-link">
+    <i class="fas fa-envelope"></i>
+  </a>
+  <a href="https://github.com/Coltahhh" class="social-link">
+    <i class="fab fa-github"></i>
+  </a>
+</div>
 </body>
 </html>
